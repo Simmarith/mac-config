@@ -1,0 +1,27 @@
+--normal brew scripts:
+cmake
+curl
+fzf
+gdbm
+gettext
+icu4c
+lf
+libyaml
+lua
+ncurses
+node
+openssl@1.1
+pcre
+perl
+python
+readline
+ruby
+sqlite
+vim
+xz
+zsh
+zsh-completions
+--brew casks:
+amethyst
+arduino
+godot
