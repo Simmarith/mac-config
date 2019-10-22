@@ -38,6 +38,7 @@ set splitbelow splitright
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set backspace=indent,eol,start
 colorscheme ron 
 
 " Plugin Settings
