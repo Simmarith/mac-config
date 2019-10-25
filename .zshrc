@@ -68,7 +68,7 @@ HIST_STAMPS="mm.dd.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm web-search yarn wd z zsh-syntax-highlighting)
+plugins=(git npm web-search yarn wd z zsh-syntax-highlighting kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,9 +112,9 @@ autoload -Uz url-quote-magic
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #Proxy params
-export http_proxy=http://proxy.fhm.de:8080
-export https_proxy=http://proxy.fhm.de:8080
-export all_proxy=http://proxy.fhm.de:8080
+# export http_proxy=http://proxy.fhm.de:8080
+# export https_proxy=http://proxy.fhm.de:8080
+# export all_proxy=http://proxy.fhm.de:8080
 
 alias ll="ls -l"
 
