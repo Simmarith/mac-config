@@ -28,6 +28,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'thinca/vim-localrc'
 Plug 'airblade/vim-gitgutter'
+Plug 'stevearc/vim-arduino'
 
 call plug#end()
 
