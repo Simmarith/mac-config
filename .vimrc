@@ -82,6 +82,12 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
+" Weird filetypes
+autocmd BufNewFile,BufRead *.groff set filetype=groff
+
+" Automation
+autocmd BufWritePost *.groff silent! !groff -m ms % -T pdf > %.pdf
+
 " Custom Makros
 
 nmap <s-f> :FZF<cr>
