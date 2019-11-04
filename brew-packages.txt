@@ -1,22 +1,30 @@
 --normal brew scripts:
+arduino-cli
 cmake
 curl
+entr
 fzf
 gdbm
 gettext
+groff
 icu4c
+kubernetes-cli
+kubernetes-helm
 lf
 libyaml
 lua
+minikube
 ncurses
 node
 openssl@1.1
+p7zip
 pcre
 perl
 python
 readline
 ruby
 sqlite
+the_silver_searcher
 vim
 xz
 zsh
@@ -25,3 +33,4 @@ zsh-completions
 amethyst
 arduino
 godot
+minikube
