@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/Applications/Wine Stable.app/Contents/Resources/start/bin:/Applications/Wine Stable.app/Contents/Resources/wine/bin:$HOME/.npm-packages/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/men0007a/.oh-my-zsh"
@@ -68,7 +68,7 @@ HIST_STAMPS="mm.dd.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm web-search yarn wd z zsh-syntax-highlighting kubectl helm)
+plugins=(git npm web-search yarn wd z zsh-syntax-highlighting kubectl helm docker)
 
 source $ZSH/oh-my-zsh.sh
 

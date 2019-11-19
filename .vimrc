@@ -29,6 +29,7 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'thinca/vim-localrc'
 Plug 'airblade/vim-gitgutter'
 Plug 'stevearc/vim-arduino'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
