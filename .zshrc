@@ -1,5 +1,7 @@
-# If you come from bash you might have to change your $PATH.
-export PATH="/Applications/Wine Stable.app/Contents/Resources/start/bin:/Applications/Wine Stable.app/Contents/Resources/wine/bin:$HOME/.npm-packages/bin:$PATH"
+# WINE to path
+export PATH="/Applications/Wine Stable.app/Contents/Resources/start/bin:/Applications/Wine Stable.app/Contents/Resources/wine/bin:$PATH"
+# global npm packages to path
+export PATH="$HOME/.npm-packages/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/men0007a/.oh-my-zsh"
