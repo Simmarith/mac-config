@@ -24,12 +24,15 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'janko-m/vim-test'
 Plug 'obxhdx/vim-auto-highlight'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'thinca/vim-localrc'
 Plug 'airblade/vim-gitgutter'
 Plug 'stevearc/vim-arduino'
 Plug 'tpope/vim-surround'
+Plug 'hashivim/vim-terraform'
+Plug 'CodeMyst/vimsence'
 
 call plug#end()
 
@@ -71,7 +74,11 @@ nmap <silent> t<c-f> :TestFile<CR>
 nmap <silent> t<c-a> :TestSuite<CR>
 nmap <silent> t<c-l> :TestLast<CR>
 nmap <silent> t<c-g> :TestVisit<CR>
- 
+
+" Alignment formatting
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
 " JS formatter
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 " for json
