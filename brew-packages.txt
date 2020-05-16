@@ -1,6 +1,5 @@
 --normal brew scripts:
 adwaita-icon-theme
-ansible
 aom
 arduino-cli
 atk
@@ -87,11 +86,13 @@ lzo
 meson
 metis
 minikube
+mono
 mpfr
 ncurses
 netpbm
 nettle
 ninja
+nmap
 node
 nspr
 nss
@@ -120,6 +121,7 @@ readline
 rtmpdump
 rubberband
 ruby
+sc-im
 sdl2
 snappy
 speex
@@ -131,6 +133,7 @@ tesseract
 the_silver_searcher
 theora
 unbound
+unrar
 vim
 webp
 wget
@@ -145,13 +148,27 @@ zsh-completions
 --brew casks:
 amethyst
 android-platform-tools
+anydesk
 apptrap
 arduino
+blender
+db-browser-for-sqlite
+discord
+firefox
+gimp
 godot
+google-chrome
+grandperspective
+horndis
+iterm2
 java
-mactex
+meshmixer
 minecraft
 minikube
+obs
 qt-creator
+sidequest
 spotify
+telegram
+tidal
 vlc

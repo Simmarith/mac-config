@@ -3,6 +3,9 @@ export PATH="/Applications/Wine Stable.app/Contents/Resources/start/bin:/Applica
 # global npm packages to path
 export PATH="$HOME/.npm-packages/bin:$PATH"
 
+#MicMac
+export PATH="/opt/micmac/bin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/men0007a/.oh-my-zsh"
 
@@ -122,3 +125,4 @@ alias ll="ls -l"
 
 export PATH=$PATH:/usr/local/Cellar/node/12.11.1/bin
 export TILLER_NAMESPACE=tools
+alias python=/usr/local/bin/python3.7
