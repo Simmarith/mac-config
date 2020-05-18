@@ -3,3 +3,5 @@
 [user]
 	name = Simmarith
 	email = menzeladrian@googlemail.com
+[core]
+	excludesfile = /Users/men0007a/.gitignore-system
