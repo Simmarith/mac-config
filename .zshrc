@@ -2,6 +2,8 @@
 export PATH="/Applications/Wine Stable.app/Contents/Resources/start/bin:/Applications/Wine Stable.app/Contents/Resources/wine/bin:$PATH"
 # global npm packages to path
 export PATH="$HOME/.npm-packages/bin:$PATH"
+# add scripts folder
+export PATH="$HOME/scripts/bash:$PATH"
 
 #MicMac
 export PATH="/opt/micmac/bin:$PATH"
@@ -125,4 +127,4 @@ alias ll="ls -l"
 
 export PATH=$PATH:/usr/local/Cellar/node/12.11.1/bin
 export TILLER_NAMESPACE=tools
-alias python=/usr/local/bin/python3.7
+alias python=/usr/local/bin/python3
