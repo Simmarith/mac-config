@@ -14,6 +14,8 @@ Plug 'leshill/vim-json'
 Plug '/usr/local/opt/fzf/'
 Plug 'junegunn/fzf.vim'
 Plug 'Valloric/YouCompleteMe'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -67,6 +69,9 @@ let g:goyo_width = 120
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 let g:editorconfig_Beautifier = '~/.vim/.editorconfig'
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Testing suite
 nmap <silent> t<c-n> :TestNearest<CR>
@@ -89,6 +94,23 @@ autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+" Status line customisation
+function! MyStatusLine()
+  " default
+  let line = '%f%m %y'
+  " Arduino stuff
+  if &ft == 'arduino'
+    let port = arduino#GetPort()
+    let board = g:arduino_board
+    let line = '%f%m [' . matchstr(board, '[^,]*') . '] [' . g:arduino_programmer . ']'
+    if !empty(port)
+      let line = line . ' (' . port . ':' . g:arduino_serial_baud . ')'
+    endif
+  endif
+  return line
+endfunction
+autocmd BufRead,BufNewFile,BufEnter * setl statusline=%!MyStatusLine()
 
 " Weird filetypes
 autocmd BufNewFile,BufRead *.groff set filetype=groff
