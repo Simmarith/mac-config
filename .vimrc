@@ -73,6 +73,8 @@ let g:editorconfig_Beautifier = '~/.vim/.editorconfig'
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:ale_fixers = ['eslint']
+let g:ale_fix_on_save = 1
 
 " Testing suite
 nmap <silent> t<c-n> :TestNearest<CR>
@@ -86,7 +88,8 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " JS formatter
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer>  <c-f> :ALEFix<cr>
+autocmd FileType vue noremap <buffer> <c-f> :ALEFix<cr>
 " for json
 autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
 " for jsx
